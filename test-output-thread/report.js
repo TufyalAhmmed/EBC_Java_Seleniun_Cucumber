@@ -1,0 +1,4 @@
+$(document).ready(function() {
+CucumberHTML.timelineItems.pushArray([{"id":"0319653f-5347-4532-8c41-d1bd3d5ff3b9","feature":"QC Allocator","scenario":"Verify QC Allocator Functions works","start":1663173394952,"group":18,"content":"","tags":"","end":1663173494188,"className":"passed"},{"id":"0c765347-b5b8-4c25-9f14-41acd6129543","feature":"LogIn Page","scenario":"Verify user logged in successfully","start":1663173330318,"group":18,"content":"","tags":"","end":1663173394780,"className":"passed"}]);
+CucumberHTML.timelineGroups.pushArray([{"id":18,"content":"Thread[TestNG-PoolService-0,5,main]"}]);
+});
