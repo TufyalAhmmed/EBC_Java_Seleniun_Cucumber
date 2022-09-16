@@ -18,7 +18,7 @@ public class InReworkSteps {
     InRework inRework;
     //baseTests base;
 
-    public InReworkSteps(baseTests base) throws MalformedURLException {
+    public InReworkSteps(baseTests base) throws MalformedURLException{
 
         this.driver = base.setUp();
         inRework = new InRework(driver);

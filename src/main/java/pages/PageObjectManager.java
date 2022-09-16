@@ -7,6 +7,7 @@ public class PageObjectManager {
     public Login login;
     public QcAllocator qcAllocator;
     public InRework inRework;
+    public L2_PendingReview l2_PendingReview;
 
     public PageObjectManager(WebDriver driver) {
         this.driver =driver;
@@ -22,6 +23,10 @@ public class PageObjectManager {
     public  InRework getInRework(WebDriver driver) {
         inRework = new InRework(driver);
         return inRework;
+    }
+    public L2_PendingReview getL2_PendingReview(WebDriver driver){
+        l2_PendingReview = new L2_PendingReview(driver);
+        return l2_PendingReview;
     }
 
 }
