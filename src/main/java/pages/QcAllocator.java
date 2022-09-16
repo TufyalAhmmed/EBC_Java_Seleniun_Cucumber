@@ -10,7 +10,7 @@ public class QcAllocator {
     private By statusDropdownLink = By.xpath("//mat-select[@id='mat-select-0']");
     private By closedLink = By.xpath("//span[@class='mat-option-text'][normalize-space()='CLOSED']");
     private By assignedToLink = By.xpath("//legend[normalize-space()='QC Allocator']");
-    private By searchBtn = By.xpath("(//button[normalize-space()='Search'])[2]");
+    private By searchBtn = By.xpath("//button[@type='button'][normalize-space()='Search']");
     private By scrollBottom = By.xpath("//div[@class='mat-paginator-outer-container']");
     private By scrollTop= By.xpath("//div[@class='col-md-1 bg-Grey-ey-1']");
     private By eyCheckId = By.xpath("//input[@id='mat-input-3']");
