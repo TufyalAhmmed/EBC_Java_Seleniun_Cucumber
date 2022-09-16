@@ -2,6 +2,10 @@ package utils;
 import org.junit.After;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 
 public class baseTests {
 
@@ -12,21 +16,20 @@ public class baseTests {
         driver = new ChromeDriver();
         //driver = new ChromeDriver();
         driver.get("https://ebc-web-ct.azurewebsites.net");
-        //Mazimize current window
+        //Maximize current window
         driver.manage().window().maximize();
     }
-
+    @BeforeClass
     public WebDriver setUp() {
         return this.driver;
     }
-
-    @After
+    @AfterClass
     public void tearDown() throws InterruptedException {
         //Delay execution for 5 seconds to view the maximize operation
-        Thread.sleep(10000);
-//        if (driver != null) {
-//            driver.quit();
-//        }
-        driver.close();
+//        Thread.sleep(10000);
+        if (driver != null) {
+            driver.quit();
+        }
+
     }
 }

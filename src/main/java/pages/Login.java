@@ -10,7 +10,7 @@ public class Login {
   private By usenameLink = By.xpath("//input[@id='mat-input-1']");
   private By passwordLink = By.xpath("//input[@id='mat-input-2']");
   private By submitBtn = By.xpath("//button[normalize-space()='Log In']");
-  private By qcAllocatorRadioBtn = By.xpath("//div[@class='mat-radio-outer-circle']");
+  private By qcAllocatorRadioBtn = By.xpath("//label[@for='mat-radio-2-input']//div[@class='mat-radio-outer-circle']");
   private By roleSubmitBtn = By.xpath("//input[@value='Submit']");
 
 
