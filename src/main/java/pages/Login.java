@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class Login {
-
     public WebDriver driver;
 
   private By usenameLink = By.xpath("//input[@id='mat-input-1']");
